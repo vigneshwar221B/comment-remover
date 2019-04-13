@@ -15,10 +15,10 @@ def del_comments(file_name):
         f.write(new_str)
 
 if len(sys.argv)>1:
-    print("cmd")
+   
     for filename in sys.argv[1:]:
         del_comments(filename)
 else:
-    print("not cmd")
+    
     name = input("enter the filename: ")
     del_comments(name)
